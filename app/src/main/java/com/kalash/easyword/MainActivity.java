@@ -64,14 +64,7 @@ private boolean blackmode=false;
                     String word=inputText.getText().toString();
                     fetchData data=new fetchData(word,requestQueue);
                 data.getData(MainActivity.this, binding.defList, binding.similarWord);
-                binding.word.setText("Word:" + inputText.getText().toString().toUpperCase());
-//                    try{
-//                        Thread.sleep(1500);
-//
-//                        // Then do something meaningful...
-//                    }catch(InterruptedException e){
-//                        e.printStackTrace();
-//                    }
+                binding.word.setText("Word:" + inputText.getText().toString().toUpperCase());                  
                 }
                 return false;
             }
